@@ -1,0 +1,14 @@
+<p>Map/Filter: {{resultMapFilter}}</p>
+<p>distinctUntilKeyChanged: {{keyChanged | json}}</p>
+<input [formControl]="searchInput" placeholder="Buscar..." />
+<p>debounceTime: {{ lastTerm }}</p>
+<p>distinctUntilChanged: {{ allTerms | json}}</p>
+<p>distinct: {{withDistinct | json}}</p>
+<p>combineLatest: {{ combinedResult | json}}</p>
+<p>merge: {{ mergeResult | json}}</p>
+<p>merge2:{{mergeResult2 | json}}</p>
+<input [formControl]="query" placeholder="Pesquisar usuário..." />
+<p>switchMap: {{ resultSwitchMap }}</p>
+<p>mergeMap: {{ resultMergeMap}}</p>
+<p>exhaustMap: {{ resultExhaustMap}}</p>
+<p>Resultado sem switchMap: {{ resultWithoutSwitchMap}}</p>

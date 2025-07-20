@@ -1,0 +1,7 @@
+<h2>Contador com RxJS (interval)</h2>
+<p>Valor atual: {{ count }}</p>
+<button
+  (click)="started ? stopCounting() : startCounting(); started = !started"
+>
+  {{ started ? 'Parar' : 'Reiniciar' }} Contagem
+</button>

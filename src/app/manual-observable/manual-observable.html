@@ -1,0 +1,10 @@
+<h2>Observable Manual (new Observable)</h2>
+
+<button (click)="start()">Iniciar</button>
+<button (click)="stop()">Parar</button>
+
+<ul>
+  @for(val of values; track val) {
+  <li>{{ val === -1 ? 'Concluído!' : val }}</li>
+  }
+</ul>
